@@ -1,0 +1,177 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+html , body {
+    
+    height: 100%;
+    width: 100%;
+    
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nav-part1{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    /* border-bottom: 2px solid #dadada; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+.nav-part2{
+    display: flex;
+    /* background-color: blue; */
+    align-items: center;
+    gap: 4vw;
+}
+
+.nav-part1 h2{
+    font-size: 1.6vw;
+    font-weight: 700;
+}
+
+.nav-part1 h4{
+    font-size: 1.15vw;
+}
+
+.nav-part1 button{
+    font-size: 1.15vw;
+    padding: 0.7vw 1.6vw;
+    background-color: #FF735C;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 550;
+}
+
+.nav-part1 i{
+    font-weight: 800;
+    display: none;
+}
+
+.content{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 55%;
+    padding: 5vw 4vw;
+}
+
+.left h1{
+    font-size: 4.3vw;
+    line-height: 4.4vw;
+}
+
+.left h1 span{
+    color: #FF735C;
+}
+
+.left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+}
+
+.content button{
+    font-size: 1.2vw;
+    padding: 1.1vw 2.1vw;
+    background-color: #FF735C;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 550;
+}
+
+.right{
+    height: 100%;
+    width: 45%;
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:600px) {
+
+    .nav-part1{
+        /* background-color: #FF735C;
+        color: #fff; */
+        padding: 0 5.1vw;
+        height: 60px;
+    }
+    
+    .nav-part1 h2{
+        font-size: 5vw;
+    }
+    
+    .nav-part1 h4{
+        font-size: 4vw;
+        display: none;
+    }
+    
+    .nav-part1 button{
+        display: none;
+    }
+    
+    .nav-part1 i{
+        display: block;
+        font-size: 5vw;
+    }
+    
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    
+    .left{
+        width: 100%;
+        height: 50%;
+        padding: 4vw 6vw;
+    }
+    
+    .right{
+        width: 100%;
+        height: 50%;
+    }
+    
+    .left h1{
+        font-size: 11vw;
+        line-height: 11vw;
+    }
+    
+    .left p{
+        font-size: 3.5vw;
+        width: 90%;
+        margin-top: 4vw;
+        margin-bottom: 4.5vw;
+    }
+    
+    .content button{
+        padding: 2vw 2vw;
+        border-radius: 3px;
+        font-size: 3.5vw;
+        font-weight: 600;
+    }
+}
